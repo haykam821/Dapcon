@@ -20,5 +20,13 @@
 	"bugs": {
 		"url": "https://github.com/haykam821/Dapcon/issues"
 	},
-	"homepage": "https://github.com/haykam821/Dapcon#readme"
+	"homepage": "https://github.com/haykam821/Dapcon#readme",
+	"dependencies": {
+		"cosmiconfig": "^7.0.1",
+		"debug": "^4.3.3",
+		"express": "^4.17.1",
+		"ldapjs": "^2.3.1",
+		"merge-deep": "^3.0.3",
+		"utf8-length": "^0.0.1"
+	}
 }
