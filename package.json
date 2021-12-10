@@ -1,0 +1,24 @@
+{
+	"name": "dapcon",
+	"version": "1.0.0",
+	"description": "A proof-of-concept server that allows players to execute arbitrary console commands from Minecraft chat.",
+	"main": "./src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/haykam821/Dapcon.git"
+	},
+	"keywords": [
+		"minecraft",
+		"log4j",
+		"vulnerability"
+	],
+	"author": "haykam821",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/haykam821/Dapcon/issues"
+	},
+	"homepage": "https://github.com/haykam821/Dapcon#readme"
+}
