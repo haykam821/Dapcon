@@ -116,4 +116,6 @@ async function start() {
 		logHttp("HTTP server listening on http://0.0.0.0:%d", config.httpPort);
 	});
 }
+
+/* eslint-disable-next-line unicorn/prefer-top-level-await */
 start();
