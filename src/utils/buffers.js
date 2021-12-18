@@ -4,6 +4,12 @@ const TC_OBJECT = 0x73;
 const TC_CLASSDESC = 0x72;
 const TC_STRING = 0x74;
 
+/**
+ * Creates a buffer for a string.
+ * @param {string} string The string to create a buffer for.
+ * @param {number} type The type to prepend to the buffer.
+ * @returns {Buffer} The created string buffer.
+ */
 function createStringBuffer(string, type = TC_STRING) {
 	if (typeof string !== "string") {
 		throw new TypeError("'string' argument must be a string, found " + typeof string);
@@ -21,6 +27,11 @@ function createStringBuffer(string, type = TC_STRING) {
 	]);
 }
 
+/**
+ * Creates a buffer for a message.
+ * @param {string} message The message to create a buffer for.
+ * @returns {Buffer} The created message buffer.
+ */
 function createMessageBuffer(message) {
 	return Buffer.concat([
 		Buffer.from([
@@ -34,6 +45,12 @@ function createMessageBuffer(message) {
 }
 module.exports.createMessageBuffer = createMessageBuffer;
 
+/**
+ * Creates a buffer for an object.
+ * @param {string} command The command to include in the object.
+ * @param {string} className The name of the class.
+ * @returns {Buffer} The created object buffer.
+ */
 function createObjectBuffer(command, className) {
 	return Buffer.concat([
 		Buffer.from([
